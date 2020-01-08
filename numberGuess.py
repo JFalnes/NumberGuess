@@ -22,8 +22,17 @@ while start == True:
         print(t, ":", guessNum, "\nYour number was incorrect!")
         wrongGuess = wrongGuess + 1
         print("You have ", wrongGuess, "/3 wrong guesses!")
+    elif guessNum == "":
+        print("Please senor... not this")
     if wrongGuess >= 3:
         print("You lose!")
         time.sleep(1)
         start = False
+    if score == 3:
+        print("You win!")
+        start = False
+        startAgain = input("Do you want to play a game?" )
+        if startAgain == "yes":
+            start = True
+
 
