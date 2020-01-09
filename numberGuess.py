@@ -25,11 +25,11 @@ while start == True:
     elif guessNum == "":
         print("Please senor... not this")
     if wrongGuess >= 3:
-        print("You lose!")
+        print("You lose! \nNow it is time to die.")
         time.sleep(1)
         start = False
     if score == 3:
-        print("You win!")
+        print("You win! \nNow it is time to die.")
         start = False
         startAgain = input("Do you want to play a game?" )
         if startAgain == "yes":
